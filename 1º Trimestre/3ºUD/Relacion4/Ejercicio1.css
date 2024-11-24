@@ -1,0 +1,18 @@
+section {
+    font-size: 1.5rem; /* Equivale a 24px, pero usamos rem */
+  }
+  
+  li {
+    font-size: 1rem; /* Base de 16px */
+  }
+  
+  /* Ajustamos el tamaño de las sublistas */
+  ol ol,
+  ul {
+    font-size: 0.9rem; /* Las sublistas tendrán un tamaño ligeramente menor */
+  }
+  
+  ul ul {
+    font-size: 0.8rem; /* Sublistas dentro de sublistas, más pequeñas pero legibles */
+  }
+  

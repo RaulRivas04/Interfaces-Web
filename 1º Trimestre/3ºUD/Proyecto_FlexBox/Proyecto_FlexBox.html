@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="Proyecto_FlexBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Menú Hamburguesa -->
+<header>
+    <div class="menu-container">
+        <div class="logo"><img src="Imagenes/logo.PNG" alt="Foto del logo"></div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Sección Hero -->
+    <section id="hero">
+        <h1>¡Hola, soy <span>Raúl Rivas</span>!</h1>
+        <p>Desarrollador Web | Diseñador | Freelancer</p>
+        <a href="https://github.com/RaulRivas04" class="btn">Visita mi GitHub</a>
+    </section>
+
+<!-- Galería de Proyectos -->
+<section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <div class="galeria">
+        <!-- Enlace que abre el proyecto en una nueva pestaña -->
+        <div class="proyecto-card">
+            <a href="https://www.ejemplo.com/proyecto1" target="_blank">
+                <img src="Imagenes/proyecto1.png" alt="Proyecto 1">
+            </a>
+        </div>
+
+        <!-- Enlace que descarga el archivo -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Desarrollo-Cliente/blob/main/1%C2%BATrimestre/UD5/pong-game.rar" download="pong-game.rar" target="_blank">
+                <img src="Imagenes/proyecto2.png" alt="Proyecto 2">
+            </a>
+        </div>
+
+        <!-- Enlace que abre el proyecto en una nueva pestaña -->
+        <div class="proyecto-card">
+            <a href="https://www.ejemplo.com/proyecto3" target="_blank">
+                <img src="Imagenes/proyecto3.png" alt="Proyecto 3">
+            </a>
+        </div>
+
+        <!-- Enlace que abre el proyecto en una nueva pestaña -->
+        <div class="proyecto-card">
+            <a href="https://www.ejemplo.com/proyecto4" target="_blank">
+                <img src="proyecto4.jpg" alt="Proyecto 4">
+            </a>
+        </div>
+
+        <!-- Enlace que abre el proyecto en una nueva pestaña -->
+        <div class="proyecto-card">
+            <a href="https://www.ejemplo.com/proyecto5" target="_blank">
+                <img src="proyecto5.jpg" alt="Proyecto 5">
+            </a>
+        </div>
+
+        <!-- Enlace que abre el proyecto en una nueva pestaña -->
+        <div class="proyecto-card">
+            <a href="https://www.ejemplo.com/proyecto6" target="_blank">
+                <img src="proyecto6.jpg" alt="Proyecto 6">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi">
+        <div class="sobre-mi-content">
+            <img src="Imagenes/Mifoto.PNG" alt="Foto sobre mí">
+            <h2>Sobre Mí</h2>
+            <p>Me apasiona el desarrollo web y el diseño creativo. Tengo experiencia en proyectos frontend y backend.</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-cards">
+            <div class="card">
+                <i class="fa fa-code"></i>
+                <h3>Desarrollo Frontend</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-server"></i>
+                <h3>Desarrollo Backend</h3>
+                <p>Node.js, PHP, Python</p>
+            </div>
+            <div class="card">
+                <i class="fa fa-paint-brush"></i>
+                <h3>Diseño Web</h3>
+                <p>UI/UX, Diseño Responsivo</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+        <div class="barra">
+            <h4>PHP</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 35%;"></div>
+                <span class="porcentaje">35%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Cisco Packet Tracer</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 55%;"></div>
+                <span class="porcentaje">55%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Sistemas operativos en red</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 60%;"></div>
+                <span class="porcentaje">60%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Oracle</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 65%;"></div>
+                <span class="porcentaje">65%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>MySQL</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 70%;"></div>
+                <span class="porcentaje">70%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>CSS</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 75%;"></div>
+                <span class="porcentaje">75%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Aplicaciones web</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 77%;"></div>
+                <span class="porcentaje">77%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>JavaScript</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 80%;"></div>
+                <span class="porcentaje">80%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Aplicaciones Ofimáticas</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 85%;"></div>
+                <span class="porcentaje">85%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>HTML</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 90%;"></div>
+                <span class="porcentaje">90%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Sistemas operativos monopuesto</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 92%;"></div>
+                <span class="porcentaje">92%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Servicios en la red</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 94%;"></div>
+                <span class="porcentaje">94%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Formación en centros de trabajo</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 96%;"></div>
+                <span class="porcentaje">96%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Empresa e iniciativa emprendedora</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 98%;"></div>
+                <span class="porcentaje">98%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Montaje y mantenimiento de equipos</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 100%;"></div>
+                <span class="porcentaje">100%</span>
+            </div>
+        </div>
+        <div class="barra">
+            <h4>Formación y Orientación Laboral</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 100%;"></div>
+                <span class="porcentaje">100%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+<!-- Testimonios -->
+<section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonios-cards">
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio1.jpg" alt="Imagen de Grupo 2000">
+            <p>Excelente trabajo, y atento a los detalles, nos gustaría que en un futuro pudieras trabajar con nosotros 😁.</p>
+            <h4>Grupo 2000</h4>
+        </div>
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio2.avif" alt="Imagen de Patricio Hernández">
+            <p>Gran experiencia, recomiendo sus servicios al 100%, me ayudó mucho en mi negocio online. Un saludo y gracias.</p>
+            <h4>Patricio Hernández</h4>
+        </div>
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio3.jpg" alt="Imagen de María González">
+            <p>Raúl hizo un trabajo excelente, entendió nuestras necesidades y las tradujo perfectamente en soluciones digitales.</p>
+            <h4>María González, CEO de TechSolutions</h4>
+        </div>
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio4.jpg" alt="Imagen de Juan Pérez">
+            <p>Raúl superó nuestras expectativas, mostrando gran atención al detalle y comprensión de lo que necesitábamos.</p>
+            <h4>Juan Pérez, Director de Marketing en Innovatech</h4>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea rows="4" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Raúl Rivas. Todos los derechos reservados.</p>
+        <div class="redes_sociales">
+            <a href="https://www.instagram.com/raul_rrivas/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@raulrivasortega?lang=es"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/Raul_Rivas_"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

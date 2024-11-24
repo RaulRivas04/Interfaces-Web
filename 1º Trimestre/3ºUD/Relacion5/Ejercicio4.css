@@ -1,0 +1,19 @@
+/* Configuración del contenedor de la página para centrar el elemento */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Contenedor con el gradiente y borde negro */
+  .gradient-box {
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    background: linear-gradient(to top right, red, white, blue);
+    border: 1px solid black; /* Borde negro */
+  }
+  

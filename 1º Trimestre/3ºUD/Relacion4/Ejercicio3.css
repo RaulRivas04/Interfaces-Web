@@ -1,0 +1,20 @@
+/* Espaciado para la página */
+body {
+  padding-left: 20px;
+}
+
+/* Centrar el encabezado */
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Espaciado entre elementos de la lista */
+ol.alphabetical-list li {
+  margin-bottom: 10px; 
+}
+
+ul.bulleted-list li,
+ul.image-bullet-list li {
+  margin-bottom: 10px;
+}

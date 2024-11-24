@@ -1,0 +1,26 @@
+.shadow1 {
+   text-shadow: 1px 1px 2px black;
+}
+
+.shadow2 {
+   text-shadow: 2px 2px 5px red;
+}
+
+.shadow3 {
+   text-shadow: 2px 2px 5px blue, -2px -2px 5px green, 2px -2px 5px red;
+}
+
+.shadow4 {
+   color: gray;
+   text-shadow: 1px 1px 2px lightgray;
+}
+
+.shadow5 {
+   color: darkgray;
+   text-shadow: 2px 2px 2px gray;
+}
+
+.shadow6 {
+   color: gray;
+   text-shadow: 1px 1px 2px dimgray;
+}

@@ -1,0 +1,20 @@
+/* CSS: actividad2.css */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+}
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+}
+
+/* Estilo alternado de colores en las filas */
+tr:nth-child(odd) td {
+    background-color: #d1e7ff; /* Azul claro para filas impares */
+}
+
+tr:nth-child(even) td {
+    background-color: #a6c8ff; /* Azul un poco más oscuro para filas pares */
+}

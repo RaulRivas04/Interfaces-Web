@@ -1,0 +1,24 @@
+/* Estilo para el primer rectángulo */
+#first {
+  background-color: blue;
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+}
+
+/* Estilo para el segundo rectángulo */
+#second {
+  border: 5px solid red; 
+  width: 50px;
+  height: 200px;
+  margin: 20px; 
+}
+
+/* Estilo para el tercer rectángulo */
+#third {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  margin: 20px; 
+  border-radius: 50%;
+}

@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 450px; /* Aumenté la altura para que la imagen no se recorte */
+    overflow: visible; /* Permitir que los elementos sobresalgan */
+}
+
+/* Imagen completa */
+.card-img img {
+    width: 100%;
+    height: auto; /* Mantener la imagen completa sin recortar */
+    display: block;
+}
+
+/* Estilos para la capa inferior que sobresale en hover */
+.card-info {
+    position: absolute;
+    bottom: -50px; /* Hace que sobresalga de la parte inferior de la imagen */
+    left: 0;
+    width: 100%;
+    background-color: rgba(144, 238, 144, 0.9); /* Verde translúcido */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+/* Efecto hover: la capa con texto sube y aparece */
+.card:hover .card-info {
+    opacity: 1;
+    bottom: 0; /* Al hacer hover, la capa sube para alinearse con la imagen */
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
