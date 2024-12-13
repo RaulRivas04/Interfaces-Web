@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Productos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <h1>RRO SHOP</h1>
+    </div>
+    
+    
+    <select id="categories">
+      <option value="">Cargando categorías...</option>
+    </select>
+    <button id="viewCart">🛒 Ver Carrito (<span id="cartCount">0</span>)</button>
+    <div id="userActions">
+      <button id="loginButton">Iniciar Sesión</button>
+      <button id="registerButton">Registrarse</button>
+      <button id="adminPanelButton" style="display:none;">Panel de Admin</button>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <h2>¡Bienvenidos a la mejor tienda online!</h2>
+    <p>Descubre nuestras categorías y ofertas exclusivas.</p>
+  </section>
+  
+  
+  <section class="social-media">
+    <h3>¡Conéctate con nosotros en redes sociales!</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/platzi/?locale=es_ES" target="_blank" class="social-icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/platzi" target="_blank" class="social-icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/platzi/" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@Platzi" target="_blank" class="social-icon youtube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Reemplazamos la suscripción con el campo de búsqueda -->
+  <section class="newsletter">
+    <h3>Buscar Productos</h3>
+    <input type="text" id="searchInput" placeholder="Buscar productos..." />
+  </section>
+  
+  <main>
+    <section id="products" class="products-container">
+      <!-- Productos se cargarán aquí -->
+    </section>
+    <div id="loading" class="loading">Cargando más productos...</div>
+    <button id="loadMore" class="load-more">Cargar más</button>
+  </main>
+  
+  <!-- Modal del Carrito -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span id="closeCart" class="close">&times;</span>
+      <h2>Carrito de Compras</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">
+        <p>Total: $<span id="cartTotal">0</span></p>
+        <button id="checkout">Finalizar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Autenticación -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span id="closeAuth" class="close">&times;</span>
+      <h2 id="authTitle">Iniciar Sesión</h2>
+      <form id="authForm">
+        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Panel de Administración -->
+  <div id="adminPanel" class="modal">
+    <div class="modal-content">
+      <span id="closeAdminPanel" class="close">&times;</span>
+      <h2>Panel de Administración</h2>
+      <div>
+        <h3>Gestión de Usuarios</h3>
+        <div id="userList"></div>
+      </div>
+      <div>
+        <h3>Gestión de Productos</h3>
+        <div id="productManagement">
+          <!-- Lista de productos gestionados -->
+        </div>
+        <button id="addProduct">Agregar Producto</button>
+      </div>
+      
+      <!-- Formulario para agregar un producto -->
+      <div id="addProductForm" style="display:none;">
+        <h3>Nuevo Producto</h3>
+        <form id="productForm">
+          <input type="text" id="productTitle" placeholder="Título del Producto" required>
+          <input type="number" id="productPrice" placeholder="Precio del Producto" required>
+          <textarea id="productDescription" placeholder="Descripción del Producto" required></textarea>
+          <input type="text" id="productCategory" placeholder="Categoría del Producto" required>
+          <button type="submit">Agregar Producto</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-columns">
+      <ul>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Métodos de pago</a></li>
+      </ul>
+    </div>
+    <p>&copy; 2024 Tienda de Productos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

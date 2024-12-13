@@ -1,0 +1,116 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "aside"
+        "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos base y colores */
+header {
+    grid-area: header;
+    background-color: #ffcc00; /* Amarillo */
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #0066cc; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    grid-area: section;
+    background-color: #bada55; /* Verde */
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #cccccc; /* Gris claro */
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #33cc33; /* Verde oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile first (extra pequeño) */
+@media (max-width: 575px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pantallas pequeñas: ≥576px */
+@media (min-width: 576px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pantallas medianas: ≥768px */
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "nav section"
+            "aside section"
+            "footer footer";
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* Pantallas grandes: ≥992px */
+@media (min-width: 992px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "nav section aside"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+/* Pantallas extra grandes: ≥1200px */
+@media (min-width: 1200px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "nav section aside"
+            "footer footer footer";
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
