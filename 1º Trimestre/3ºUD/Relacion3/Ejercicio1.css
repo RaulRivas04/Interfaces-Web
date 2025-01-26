@@ -1,0 +1,18 @@
+/* CSS: actividad1.css */
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td {
+    border: 1px solid black;
+    width: 33.33%;
+    height: 50px;
+    background-color: #cccccc; /* Fondo gris claro */
+}
+
+/* Fila superior con fondo negro */
+.black-row td {
+    background-color: #4b4b4b;    
+    color: white;
+}

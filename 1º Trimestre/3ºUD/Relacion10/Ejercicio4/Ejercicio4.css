@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px; /* Inicialización del tamaño de letra */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(10, minmax(11rem, 1fr)) 1fr; /* Primera y última columna son 1fr, resto max 11rem */
+    grid-template-rows: 50vh repeat(7, auto); /* Primera fila 50vh, resto auto */
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.item {
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.item:nth-child(odd) {
+    background-color: #3e8e41;
+}

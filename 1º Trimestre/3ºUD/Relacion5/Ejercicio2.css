@@ -1,0 +1,74 @@
+.offset {
+    overflow: hidden;
+    margin: 20px 0 40px 20px;
+}
+
+.offset div {
+    background-color: #eee;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width: 160px;
+    text-align: center;
+}
+
+/* Efecto de borde superior e izquierdo en gris oscuro para la caja A */
+.exampleboxshadowa {
+    background-color: #eee;
+    position: relative;
+}
+
+/* Sombras específicas para las otras cajas */
+.exampleboxshadowb {
+    box-shadow: -5px -5px 10px rgba(102, 102, 102, 0.9); 
+}
+.exampleboxshadowc {
+    box-shadow: -8px -8px 15px rgba(102, 102, 102, 0.9); 
+}
+
+.exampleboxshadowd {
+    box-shadow: -5px -5px 10px rgba(102, 102, 102, 0.9); 
+}
+
+.exampleboxshadowe {
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.9);
+}
+
+.exampleboxshadow {
+    border: 3px solid rgba(0, 0, 0, 0.5); /* Contorno oscuro */
+    background-color: #eee; /* Asegurarse de que el fondo sea visible */
+    position: relative; /* Para permitir el uso de propiedades de posicionamiento si es necesario */
+}
+
+.exampleboxshadowg {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.exampleboxshadowh {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.exampleboxshadowi {
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.exampleboxshadowj {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.exampleboxshadowk {
+    box-shadow: -10px 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.exampleboxshadowl {
+    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo de las letras */
+.examplelabelboxshadow {
+    color: #888;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}

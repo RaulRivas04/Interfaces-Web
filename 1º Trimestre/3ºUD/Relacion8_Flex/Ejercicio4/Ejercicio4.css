@@ -1,0 +1,45 @@
+/* Estilo del contenedor de noticias */
+.noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+/* Estilo para cada noticia */
+.noticia {
+    flex: 1 1 45%;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Última noticia que ocupa las dos columnas */
+.noticia.destacada {
+    flex: 1 1 100%;
+    background-color: #e0e7ff;
+    order: -1;
+}
+
+/* Imagen de cada noticia */
+.noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para título y texto */
+.noticia h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.noticia p {
+    font-size: 14px;
+    color: #666;
+}

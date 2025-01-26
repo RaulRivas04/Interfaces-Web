@@ -1,0 +1,28 @@
+/* Estilos del encabezado */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: darkred;
+  }
+  
+ 
+  ol.alphabetical-list li {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Lista desordenada con viñetas cuadradas */
+  ul.bulleted-list {
+    list-style-type: square; 
+    background-color: lightyellow;
+    padding: 20px;
+  }
+  
+  ul.bulleted-list li {
+    background-color: lightgray;
+    padding: 5px;
+  }
+  
+  /* Lista desordenada con viñetas de imagen */
+  ul.image-bullet-list {
+    list-style-image: url('decoration.png'); /* Sustituye 'bullet.png' con el path correcto de tu imagen */
+  }
+  

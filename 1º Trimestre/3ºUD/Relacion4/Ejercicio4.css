@@ -1,0 +1,44 @@
+div {
+    background-color: lightgray;
+  }
+  
+  div a {
+    background-color: blue;
+    color: white;
+  }
+  
+  div div div a {
+    background-color: red;
+    color: yellow;
+  }
+  
+  #abuelo {
+    border: 1px solid blue;
+    padding: 10px; 
+  }
+  
+  #abuelo > div {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  .padre + p {
+    background-color: limegreen;
+  }
+  
+  .madre + p {
+    background-color: lightpink;
+  }
+  
+  a[title] {
+    background-color: red;
+    color: white; 
+  }
+  
+  
+  a:not([target="_blank"]) {
+    background-color: purple;
+    color: white; 
+  }
+  

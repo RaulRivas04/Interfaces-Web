@@ -1,0 +1,47 @@
+/* Estilos generales del contenedor */
+.objeto-multimedia {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0ecec;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la imagen */
+.objeto-multimedia .imagen {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-right: 20px;
+}
+
+/* Estilos del texto */
+.objeto-multimedia .texto {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Clase para voltear la imagen al lado derecho */
+.invertido {
+    flex-direction: row-reverse;
+}
+
+/* Ajustes de espacio para cuando la imagen está a la derecha */
+.invertido .imagen {
+    margin-left: 20px;
+    margin-right: 0;
+}

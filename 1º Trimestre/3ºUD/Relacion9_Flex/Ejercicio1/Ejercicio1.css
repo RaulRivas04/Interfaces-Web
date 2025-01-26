@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #111111;
+    color: #FFF;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    background-image: url('Imagen1/cabaña.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 40px;
+    color: #FFF;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #111111;
+}
+
+.bottom-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+/* Vista Tablet */
+@media (max-width: 1000px) {
+    .top-section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Vista Móvil */
+@media (max-width: 780px) {
+    .header {
+        padding: 10px;
+        height: 70vh;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .bottom-text {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,26 @@
+/* Estilo para el div */
+div {
+    border: 2px solid #333; 
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 2rem;
+    background-color: #888;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para el párrafo con borde */
+.borde {
+    border: 2px solid green;
+}
+
+/* Estilo para el párrafo con contorno */
+.contorno {
+    outline: 2px solid green;
+}

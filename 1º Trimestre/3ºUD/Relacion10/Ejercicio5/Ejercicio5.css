@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "header header header"
+        "hero main main"
+        "sidebar main main"
+        "related-images extra-content related-posts"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+/* Estilos para las áreas */
+.header {
+    grid-area: header;
+    background-color: #00bcd4; /* Azul */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: #b39ddb; /* Lila */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #81c784; /* Verde */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: #ffeb3b; /* Amarillo */
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.extra-content {
+    grid-area: extra-content;
+    background-color: #9e9e9e; /* Gris */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.related-images {
+    grid-area: related-images;
+    background-color: #f48fb1; /* Rosa */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.related-posts {
+    grid-area: related-posts;
+    background-color: #ffb74d; /* Amarillo Naranja */
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #ff9800; /* Naranja */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Responsive design para vista móvil */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "hero"
+            "sidebar"
+            "main"
+            "related-posts"
+            "footer"
+            "extra-content";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

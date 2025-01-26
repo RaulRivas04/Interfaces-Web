@@ -1,0 +1,30 @@
+/*mis fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*msi variables*/
+:root{
+    --transparente: #00000055;
+
+    --fuente-titulos:'"Cuprum", serif';
+}
+
+/*estilos bootstrap modificados*/
+body{
+    font-family: var(--fuente-titulos);
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: var(--transparente);
+}
+
+/*mis estilos*/
+.hero{
+    background-image: url("./imagenes/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.hero h1{
+    background-color: var(--transparente);
+    border-radius: 25px;
+
+}

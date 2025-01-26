@@ -1,0 +1,48 @@
+.img4 { grid-area: img4; }
+}
+
+/* Vista tablet: dos columnas */
+@media (min-width: 577px) and (max-width: 992px) {
+    .gallery {
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6";
+        grid-template-columns: 1fr 1fr;
+    }
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
+    .img4 { grid-area: img4; }
+    .img5 { grid-area: img5; }
+    .img6 { grid-area: img6; }
+}
+
+/* Vista desktop: estructura exacta */
+@media (min-width: 993px) {
+    .gallery {
+        grid-template-areas:
+            "img1 img2 img3"
+            "img4 img4 img5"
+            "img6 img7 img8";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
+    .img4 { grid-area: img4; }
+    .img5 { grid-area: img5; }
+    .img6 { grid-area: img6; }
+    .img7 { grid-area: img7; }
+    .img8 { grid-area: img8; }
+}
+
+/* Estilo de las imágenes */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

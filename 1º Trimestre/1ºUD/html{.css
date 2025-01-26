@@ -1,0 +1,38 @@
+html{
+  //font-size:24px;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-size: 24px;
+}
+.seccion1{
+    background-color: aqua;
+}
+.seccion2{
+    background-color:gold;
+}
+.seccion3{
+    background-color:rosybrown;
+}
+.seccion4{
+    background-color:brown;
+}
+.seccion1 h2{
+    font-size:5vmin;
+}
+.seccion2 h2{
+  font-size: 10vw;
+ // font-size:10vmax;
+ // font-size:20%;
+}
+.seccion3 h2{
+    font-size: 2rem;
+}
+.seccion4 h2{
+    font-size: 2em;
+}

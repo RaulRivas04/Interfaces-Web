@@ -1,0 +1,40 @@
+.shadow1 {
+   text-shadow: 1px 1px 2px black;
+}
+
+.shadow2 {
+   color: white; /* Cambia el color del texto a blanco */
+   text-shadow: 2px 2px 5px red;
+}
+
+.shadow3 {
+   text-shadow: 2px 2px 5px blue, -2px -2px 5px green, 2px -2px 5px red;
+}
+
+.shadow4 {
+   display: inline-block; /* Asegura que el fondo se ajuste al tamaño del texto */
+   color: white; /* Cambia el color del texto a blanco */
+   background-color: lightgray; /* Color de fondo gris claro */
+   padding: 2px 4px; /* Espaciado interno más pequeño */
+   margin: 0; /* Elimina el margen para que esté más cerca de otros textos */
+   text-shadow: 1px 1px 2px dimgray; /* Mantiene la sombra del texto */
+}
+
+
+.shadow5 {
+   display: inline-block; /* Asegura que el fondo se ajuste al tamaño del texto */
+   color: darkgray; /* Mantiene el color del texto como está */
+   background-color: #a9a9a9; /* Color de fondo gris más oscuro */
+   padding: 2px 4px; /* Espaciado interno más pequeño */
+   margin: 5px 0; /* Margen superior e inferior para separar de otros textos */
+   text-shadow: 1px 1px 2px gray; /* Mantiene la sombra del texto */
+}
+
+.shadow6 {
+   display: inline-block; /* Asegura que el fondo se ajuste al tamaño del texto */
+   color: #d3d3d3; /* Color de texto gris muy claro */
+   background-color: lightgray; /* Color de fondo gris claro */
+   padding: 2px 4px; /* Espaciado interno para que el fondo rodee el texto */
+   margin: 5px 0; /* Margen superior e inferior para separar de otros textos */
+   text-shadow: 1px 1px 2px dimgray; /* Mantiene la sombra del texto */
+}

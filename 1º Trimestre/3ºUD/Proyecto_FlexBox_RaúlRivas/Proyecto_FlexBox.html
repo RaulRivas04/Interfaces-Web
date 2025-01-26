@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="Proyecto_FlexBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<!-- Menú -->
+<header>
+    <div class="menu-container">
+    
+        <!-- Logo -->
+        <div class="logo">
+            <img src="Imagenes/logo.PNG" alt="Foto del logo">
+        </div>
+
+        <!-- Navegación -->
+        <nav>
+            <!-- Caja de verificación que activa el menú -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <!-- Etiqueta que actúa como el ícono de hamburguesa para el menú -->
+            <label for="menu-toggle" class="hamburger">
+                <!-- Barras que forman el ícono de hamburguesa -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Lista de navegación -->
+            <ul class="menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+</header>
+
+        
+<br>
+<br>
+<br>
+
+
+<!-- Galería de Hero -->
+<section id="hero">
+    <div class="hero-container">
+    
+    <!-- Contenido principal de la sección Hero -->
+        <div class="hero-content">
+            <!-- Título principal con nombre -->
+            <h1>¡Hola, soy <span>Raúl Rivas</span>!</h1>
+
+            <!-- Subtítulo con especialidades -->
+            <p class="subtitle">Desarrollador Web | Diseñador | Programador</p>
+
+            <!-- Botón para visitar el GitHub -->
+            <a href="https://github.com/RaulRivas04" class="btn">Visita mi GitHub</a>
+
+            <!-- Iconos de redes sociales -->
+            <div class="social-icons">
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com/raul_rrivas/" class="social-icon" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Enlace a TikTok -->
+                <a href="https://www.tiktok.com/@raulrivasortega?lang=es" class="social-icon" target="_blank" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <!-- Enlace a Twitter -->
+                <a href="https://x.com/Raul_Rivas_" class="social-icon" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<br>
+<br>
+<br> 
+<!-- Galería de Proyectos -->
+<section id="proyectos">
+    <h2>Mis Proyectos</h2>
+    <br>
+    <p class="descripcion">Aquí puedes ver algunos de los proyectos que he desarrollado. Explora mis trabajos de desarrollo web y diseño interactivo.</p>
+    <br>
+    <div class="galeria">
+        <!-- Proyecto 1 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Desarrollo-Cliente/blob/main/1%C2%BATrimestre/UD5/pong-game.rar" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto1.png" alt="Proyecto 1">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Pong Game</h3>
+                    <p>Juego clásico de Pong hecho con JavaScript</p>
+                </div>
+            </a>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Desarrollo-Cliente/blob/main/1%C2%BATrimestre/UD5/Ejercicio_Bolas.rar" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto2.png" alt="Proyecto 2">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Ejercicio de Bolas</h3>
+                    <p>Interacción visual con bolas en movimiento usando JavaScript</p>
+                </div>
+            </a>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Interfaces-Web/blob/main/1%C2%BA%20Trimestre/1%C2%BAUD/Proyecto1/Tarea_Final_Ra%C3%BAlRivasPabloRodriguez%20(4).pdf" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto3.png" alt="Proyecto 3">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Proyecto Web</h3>
+                    <p>Proyecto final de interfaz web con Balsamiq</p>
+                </div>
+            </a>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Interfaces-Web/blob/main/1%C2%BA%20Trimestre/3%C2%BAUD/Relacion9_Flex/Ejercicio1/Ejercicio1.rar" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto4.png" alt="Proyecto 4">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Ejercicio Flexbox</h3>
+                    <p>Implementación de Flexbox en un proyecto web</p>
+                </div>
+            </a>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Desarrollo-Servidor/blob/main/EjercicioBriscaRa%C3%BAlRivas.rar" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto5.png" alt="Proyecto 5">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Brsica Española</h3>
+                    <p>Creación de una brisca española realizada con PHP</p>
+                </div>
+            </a>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="proyecto-card">
+            <a href="https://github.com/RaulRivas04/Desarrollo-Servidor/blob/main/Ejercicio_Inmobiliaria_Ra%C3%BAlRivas.rar" target="_blank">
+                <div class="proyecto-img">
+                    <img src="Imagenes/proyecto6.png" alt="Proyecto 6">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Proyecto de Inmobiliaria</h3>
+                    <p>Implementando una Inmobiliaria en una actividad PHP</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sobre Mí -->
+<section id="sobre-mi">
+    <div class="sobre-mi-container">
+
+    <!-- Imagen sobre mí -->
+        <div class="sobre-mi-imagen">
+            <img src="Imagenes/Mifoto.PNG" alt="Foto sobre mí">
+        </div>
+
+    <!-- Información sobre mí -->
+        <div class="sobre-mi-info">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy Raúl Rivas, un desarrollador web apasionado por crear experiencias digitales funcionales y atractivas. Me especializo en interfaces intuitivas y aplicaciones web centradas en el usuario.</p>
+            <p>Con experiencia en frontend y backend, he trabajado en proyectos diversos, ofreciendo soluciones eficientes y visualmente impactantes para ayudar a mis clientes a destacarse en el mundo digital.</p>
+
+            <!-- Enlace de contacto -->
+            <a href="#contacto" class="btn-contacto">¡Hablemos!</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Servicios -->
+<section id="services">
+    <h2>Mis Servicios</h2>
+    <div class="services-container">
+
+    <!-- Servicio Desarrollo Web -->
+        <div class="service-card">
+            <i class="fas fa-laptop-code service-icon"></i>
+            <h3>Desarrollo Web</h3>
+            <p>Creo sitios web modernos y funcionales adaptados a las necesidades de cada cliente, asegurando una excelente experiencia de usuario.</p>
+        </div>
+
+    <!-- Servicio Diseño de Interfaces -->
+        <div class="service-card">
+            <i class="fas fa-paint-brush service-icon"></i>
+            <h3>Diseño de Interfaces</h3>
+            <p>Diseño interfaces atractivas y fáciles de usar que ayudan a destacar tu marca y ofrecer una experiencia visualmente atractiva.</p>
+        </div>
+
+    <!-- Servicio Programación a Medida -->
+        <div class="service-card">
+            <i class="fas fa-cogs service-icon"></i>
+            <h3>Programación a Medida</h3>
+            <p>Desarrollo soluciones personalizadas a medida que se adaptan a las necesidades específicas de tu proyecto o empresa.</p>
+        </div>
+
+    <!-- Servicio Desarrollo Móvil -->
+        <div class="service-card">
+            <i class="fas fa-mobile-alt service-icon"></i>
+            <h3>Desarrollo Móvil</h3>
+            <p>Desarrollo aplicaciones móviles optimizadas tanto para iOS como Android, para brindarte una experiencia fluida y eficaz.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+
+    <!-- Habilidad PHP -->
+        <div class="barra">
+            <h4>PHP</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 35%;"></div>
+                <span class="porcentaje">35%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Cisco Packet Tracer -->
+        <div class="barra">
+            <h4>Cisco Packet Tracer</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 55%;"></div>
+                <span class="porcentaje">55%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Sistemas operativos en red -->
+        <div class="barra">
+            <h4>Sistemas operativos en red</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 60%;"></div>
+                <span class="porcentaje">60%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Oracle -->
+        <div class="barra">
+            <h4>Oracle</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 65%;"></div>
+                <span class="porcentaje">65%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad MySQL -->
+        <div class="barra">
+            <h4>MySQL</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 70%;"></div>
+                <span class="porcentaje">70%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad CSS -->
+        <div class="barra">
+            <h4>CSS</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 75%;"></div>
+                <span class="porcentaje">75%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Aplicaciones web -->
+        <div class="barra">
+            <h4>Aplicaciones web</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 77%;"></div>
+                <span class="porcentaje">77%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad JavaScript -->
+        <div class="barra">
+            <h4>JavaScript</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 80%;"></div>
+                <span class="porcentaje">80%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Aplicaciones Ofimáticas -->
+        <div class="barra">
+            <h4>Aplicaciones Ofimáticas</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 85%;"></div>
+                <span class="porcentaje">85%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad HTML -->
+        <div class="barra">
+            <h4>HTML</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 90%;"></div>
+                <span class="porcentaje">90%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Sistemas operativos monopuesto -->
+        <div class="barra">
+            <h4>Sistemas operativos monopuesto</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 92%;"></div>
+                <span class="porcentaje">92%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Servicios en la red -->
+        <div class="barra">
+            <h4>Servicios en la red</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 94%;"></div>
+                <span class="porcentaje">94%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Formación en centros de trabajo -->
+        <div class="barra">
+            <h4>Formación en centros de trabajo</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 96%;"></div>
+                <span class="porcentaje">96%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Empresa e iniciativa emprendedora -->
+        <div class="barra">
+            <h4>Empresa e iniciativa emprendedora</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 98%;"></div>
+                <span class="porcentaje">98%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Montaje y mantenimiento de equipos -->
+        <div class="barra">
+            <h4>Montaje y mantenimiento de equipos</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 100%;"></div>
+                <span class="porcentaje">100%</span>
+            </div>
+        </div>
+
+    <!-- Habilidad Formación y Orientación Laboral -->
+        <div class="barra">
+            <h4>Formación y Orientación Laboral</h4>
+            <div class="barra-container">
+                <div class="progreso" style="--porcentaje: 100%;"></div>
+                <span class="porcentaje">100%</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+
+<!-- Testimonios -->
+<section id="testimonios">
+    <h2>Testimonios</h2>
+    <br>
+
+    <!-- Testimonio 1 -->
+    <div class="testimonios-cards">
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio1.jpg" alt="Imagen de Grupo 2000">
+            <p>Excelente trabajo, y atento a los detalles, nos gustaría que en un futuro pudieras trabajar con nosotros 😁.</p>
+            <h4>Grupo 2000</h4>
+        </div>
+
+    <!-- Testimonio 2 -->
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio2.png" alt="Imagen de Patricio Hernández">
+            <p>Gran experiencia, recomiendo sus servicios al 100%, me ayudó mucho en mi negocio online. Un saludo y gracias.</p>
+            <h4>Pablo Rodriguez</h4>
+        </div>
+
+    <!-- Testimonio 3 -->
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio3.jpg" alt="Imagen de María González">
+            <p>Raúl hizo un trabajo excelente, entendió nuestras necesidades y las tradujo perfectamente en soluciones digitales.</p>
+            <h4>María González, CEO de TechSolutions</h4>
+        </div>
+
+    <!-- Testimonio 4 -->
+        <div class="testimonio-card">
+            <img src="Imagenes/testimonio4.jpg" alt="Imagen de Juan Pérez">
+            <p>Raúl superó nuestras expectativas, mostrando gran atención al detalle y comprensión de lo que necesitábamos.</p>
+            <h4>Juan Pérez, Director de Marketing en Innovatech</h4>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea rows="4" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Raúl Rivas. Todos los derechos reservados.</p>
+        <div class="redes_sociales">
+            <a href="https://www.instagram.com/raul_rrivas/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@raulrivasortega?lang=es"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/Raul_Rivas_"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

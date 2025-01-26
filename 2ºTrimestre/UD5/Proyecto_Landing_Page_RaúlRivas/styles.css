@@ -1,0 +1,732 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Cuprum&display=swap');
+
+/* Variables */
+:root {
+  --transparente: rgba(0, 0, 0, 0.6);
+  --primario: #1a1a1a;
+  --secundario: #333;
+  --fondo: #121212;
+  --texto: #e0e0e0;
+  --acento: #bb86fc;
+  --blanco: #ffffff;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* Estilos para el menú de navegación */
+.navbar {
+  background-color: var(--primario);
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--acento);
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: var(--blanco);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--acento);
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--blanco);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.nav-link {
+  color: var(--blanco);
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--acento);
+}
+
+/* Estilos para botones */
+.btn-primary {
+  background-color: var(--acento);
+  border-color: var(--acento);
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--acento), 10%);
+  border-color: darken(var(--acento), 10%);
+}
+
+/* Estilos para la sección hero */
+.hero {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  background-color: var(--transparente);
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.hero-section {
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.hero-section .display-4 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section .lead {
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+  background-color: var(--acento);
+  border-color: var(--acento);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+/* Estilos para la sección de características */
+#features .card {
+  background-color: var(--secundario);
+  color: var(--texto);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#features .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#features .card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--texto);
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#features .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--acento);
+  margin-bottom: 10px;
+}
+
+/* Estilos para el fondo con degradado */
+.bg-gradient {
+  background: linear-gradient(to bottom, #333333, #f0f0f0);
+  color: var(--negro);
+}
+
+/* Estilos para la galería y la información */
+#gallery h2, #info h2 {
+  color: var(--negro);
+}
+
+#gallery p, #info p {
+  color: var(--negro);
+}
+
+/* Transición suave entre secciones */
+section {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Estilos para las imágenes de la galería */
+#gallery .img-fluid {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+}
+
+#gallery .img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 10px rgba(128, 0, 128, 0.7);
+}
+
+#gallery .img-fluid::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: neon 1.5s infinite alternate;
+}
+
+#gallery .img-fluid:hover::before {
+  opacity: 1;
+}
+
+#gallery .img-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+}
+
+#gallery .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#gallery .img-container:hover img {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el formulario de contacto */
+#contact .form-control {
+  background-color: var(--secundario);
+  color: var(--texto);
+  border-radius: 10px;
+  border: 1px solid var(--acento);
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: var(--primario);
+  color: var(--texto);
+  font-size: 0.9rem;
+}
+
+/* Estilos para el carrusel */
+#heroCarousel {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#heroCarousel .carousel-item {
+  height: 80vh;
+}
+
+#heroCarousel .carousel-item img,
+#heroCarousel .carousel-item video {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.carousel-caption h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--blanco);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: var(--blanco);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: var(--blanco);
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+/* Estilos para las imágenes de servicio */
+.service-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos de información */
+.info-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--acento);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--acento);
+  padding-bottom: 0.5rem;
+}
+
+/* Estilos para las listas de información */
+.info-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para el texto de información */
+.info-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 4px solid var(--acento);
+  background-color: #1e1e1e;
+}
+
+/* Estilos para la sección de información */
+.info-section {
+  background-color: var(--secundario);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Estilos para el fondo de los subtítulos */
+.caption-bg {
+  background-color: var(--transparente);
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.carousel-caption h1, .carousel-caption p {
+  color: var(--blanco);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para el logo */
+.logo-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Estilos para los títulos de sección */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--acento);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--acento);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Estilos para las tarjetas de servicio */
+.service-card {
+  background-color: var(--primario);
+  color: var(--blanco);
+  border: 1px solid var(--acento);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos personalizados para el modal */
+.modal-custom {
+  background-color: var(--primario);
+  color: var(--texto);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: var(--acento);
+}
+
+.modal-body h3 {
+  color: var(--acento);
+  margin-top: 1rem;
+}
+
+.modal-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-body ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 4px solid var(--acento);
+  background-color: #1e1e1e;
+}
+
+/* Estilos personalizados para el acordeón */
+.accordion-button {
+  background-color: var(--primario);
+  color: var(--texto);
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secundario);
+  color: var(--acento);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: 1px solid var(--secundario);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.accordion-body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  border-top: 1px solid var(--secundario);
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: var(--blanco);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--acento);
+  transform: scale(1.1);
+}
+
+/* Estilos para los títulos de contacto, información y galería */
+#contact h2,
+#info h2,
+#gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--acento);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--acento);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Transición suave entre secciones */
+section {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Botón de volver arriba */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--acento);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+.back-to-top:hover {
+  background-color: darken(var(--acento), 10%);
+}
+
+/* Animaciones de entrada */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para el formulario de reservación */
+#reservation-form .form-control {
+  background-color: var(--transparente);
+  color: white;
+  border: 2px solid var(--acento);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#reservation-form .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#reservation-form .form-control:focus {
+  background-color: var(--transparente);
+  border-color: var(--acento);
+  outline: none;
+}
+
+#reservation h2 {
+  color: var(--acento);
+}
+
+/* Estilos para los íconos de hora y fecha */
+#reservation-form .form-control[type="date"]::-webkit-calendar-picker-indicator,
+#reservation-form .form-control[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+#reservation-form .form-control[type="date"]::-webkit-datetime-edit,
+#reservation-form .form-control[type="time"]::-webkit-datetime-edit {
+  color: white;
+}
+
+/* Estilos para validación de formularios */
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.is-valid {
+  border-color: #28a745;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Estilos para alertas */
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #features .card-title {
+    font-size: 1rem;
+  }
+
+  #features .card-text {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  #gallery .img-fluid {
+    height: 200px;
+  }
+
+  .info-title {
+    font-size: 1.2rem;
+  }
+
+  .info-list li {
+    font-size: 1rem;
+  }
+
+  .info-text {
+    font-size: 1rem;
+  }
+
+  .modal-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body ul li {
+    font-size: 1rem;
+  }
+
+  .modal-body p {
+    font-size: 1rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 1.2rem;
+  }
+
+  .back-to-top {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  #reservation-form .form-control {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #reservation h2 {
+    font-size: 2rem;
+  }
+}
